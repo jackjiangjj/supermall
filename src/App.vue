@@ -1,28 +1,28 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-view></router-view>
+    <main-tabbar></main-tabbar>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import TarBarItem from "./components/common/tarbar/TarBarItem";
+import TarBar from "./components/common/tarbar/TarBar";
+import SwiperItem from "./components/common/swiper/SwiperItem";
+import Swiper from "./components/common/swiper/Swiper";
+import MainTabbar from "./components/content/mainTabbar/MainTabbar";
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    MainTabbar,
+    TarBar,
+    TarBarItem,
+    Swiper,
+    SwiperItem
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
