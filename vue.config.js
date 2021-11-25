@@ -1,0 +1,13 @@
+module.exports={
+    configureWebpack:{//配置webpack相关，文件别名，路径，拓展名
+        resolve:{
+            alias:{
+                'assets':'@/assets',
+                'commonjs':'@/common',
+                'components':'@/components',
+                'network':'@/network',
+                'views':'@/views',
+            }
+        }
+    }
+}
